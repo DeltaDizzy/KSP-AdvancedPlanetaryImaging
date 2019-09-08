@@ -1,2 +1,3 @@
 # Middle-School-Math
-Helping middle-schoolers with math, with Manim
+### Helping 7th-graders with math, with Manim
+
