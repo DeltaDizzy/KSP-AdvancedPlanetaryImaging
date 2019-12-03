@@ -40,10 +40,13 @@ Shader "API/Greyscale"
                     return o;
                 }
                 
-                fixed4 frag(v2f i): SV_TARGET
+                float4 frag(v2f_img i): SV_TARGET
                 {
-                    fixed4 col = tex2D(_MainTex, i.uv);
-                    return col;
+                    float4 tex = tex2D(_MainTex, i.uv);
+                    
+                    float lum = tex.r * 0.3 + tex.g * 0.59 + tex.b * 0.11;
+                    float4 result = float4(lum, lum, lum, tex.a);
+                    return result;
                 }
                 
             ENDCG
