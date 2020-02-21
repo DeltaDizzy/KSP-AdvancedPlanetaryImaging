@@ -4,11 +4,13 @@ using UnityEngine;
 
 namespace AdvancedPlanetaryImaging
 {
+  // Gets texture from the camera
   public class APIModuleCamera : PartModule
   {
     MODULE
     {
       name = APIModuleCamera
+      cameraId = rangerB2
       cameraTransform = camera
       fieldOfView = degrees
       Overlays
@@ -27,35 +29,45 @@ namespace AdvancedPlanetaryImaging
     }
     
     [ParserTarget("cameraTransform")]
-    public String cameraTransformName = "cameraTransform";
+    public String CameraTransformName = "cameraTransform";
+    
+    [ParserTarget("cameraId")]
+    public String CameraID;
     
     [ParserTarget("fieldOfView")]
     public Int32 fov;
     
     [ParserTargetCollection("Overlays", Namesignificance = NameSignificance.Key, Key = "item")]
-    public List<String> overlays;
+    public List<String> Overlays;
     
     [ParserTargetCollection("Filters", Namesignificance = NameSignificance.Key, Key = "item")]
-    public List<String> filters;
+    public List<String> Filters;
     
     [ParserTargetCollection("Effects", Namesignificance = NameSignificance.Key, Key = "item")]
-    public List<String> effects;
+    public List<String> Effects;
     
     public Transform CameraTransform;
     
-    private RenderTexture previewRender;
+    private RenderTexture PreviewRender;
     
-    private RenderTexture fullResRender;
+    private RenderTexture FullResRender;
     
-    private Texture2D previewTexture;
+    private Texture2D PreviewTexture;
     
-    private Texture2D fullResTexture;
+    private Texture2D FullResTexture;
     
     public virtual Texture2D ApplyFilter(string filterPath, Texture2D inputTexture)
     {
       return inputTexture;
     }
     
+    public Camera GetCamera(Transform transform)
+    {
+      Camera camera = transform.GetComponent<Camera>();
+      return camera;
+    }
     // TODO: VAB Part Info
+    
+    
   }
 }
