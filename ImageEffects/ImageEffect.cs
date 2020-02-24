@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace KSP-API
 {
+  [RequireComponent(typeof(Camera))]
   public class ImageEffect : MonoBehaviour
   {
     [SerializeField]
