@@ -1,19 +1,12 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
-public class BlueImageEffect : MonoBehaviour
+public class BlueImageEffect : ImageEffect
 {
     [SerializeField]
-    private Shader shader;
-    private Material mat;
     private Boolean enabled = true;
     
-    private void Awake()
-    {
-        mat = new Material(shader);
-    }
-    
-    private void OnRenderImage(RenderTexture src, RenderTexture dst)
+    private override void OnRenderImage(RenderTexture src, RenderTexture dst)
     {
         if(enabled)
         {
