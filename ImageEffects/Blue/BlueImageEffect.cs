@@ -12,5 +12,9 @@ public class BlueImageEffect : ImageEffect
         {
             Graphics.Blit(src, dst, mat);
         }
+        else
+        {
+            Graphics.Blit(src, dst);
+        }
     }
 }
