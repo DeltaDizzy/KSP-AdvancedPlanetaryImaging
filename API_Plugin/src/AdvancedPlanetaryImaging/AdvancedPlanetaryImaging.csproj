@@ -60,14 +60,23 @@
     <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Defiant_Zombie.KSP.Skeleton.UnityEngine.TextRenderingModule.1.9.1\lib\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Defiant_Zombie.KSP.Skeleton.UnityEngine.UI.1.9.1\lib\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Defiant_Zombie.KSP.Skeleton.UnityEngine.UIModule.1.9.1\lib\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APISettings.cs" />
+    <Compile Include="PartModules\APIModuleViewFeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\UIController.cs" />
+    <Compile Include="UI\API_UI.cs" />
+    <Compile Include="UI\API_UILoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
