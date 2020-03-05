@@ -28,11 +28,29 @@ namespace AdvancedPlanetaryImaging.PartModules
             Fields[nameof(uiOpen)].uiControlFlight.onFieldChanged =
                 delegate (BaseField a, System.Object b)
                 {
-                    if (API_UI.ApiUICanvas)
+                    if (API_UI.ApiUICanvas == null)
                     {
-
+                        API_UI.ShowUI();
+                    }
+                    else
+                    {
+                        API_UI.Destroy(API_UI.ApiUICanvas);
                     }
                 };
+        }
+
+        public void FixedUpdate()
+        {
+            // is the ui drawn? if so, update all other pms
+            if (API_UI.ApiUICanvas != null)
+            {
+                uiOpen = true;
+            }
+            else return;
+
+            uiSliderValue = API_UI.SliderPos();
+
+            API_UI.UpdateText(uiSliderValue.ToString());
         }
     }
 }

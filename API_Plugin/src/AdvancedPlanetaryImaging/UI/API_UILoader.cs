@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -21,7 +20,9 @@ namespace AdvancedPlanetaryImaging.UI
 
         private void Awake()
         {
-            AssetBundle prefabs = AssetBundle.LoadFromFile
+            AssetBundle prefabs = AssetBundle.LoadFromFile(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "kspadvcam.delta"));
+            panelPrefab = prefabs.LoadAsset("MainPanel") as GameObject;
+
         }
     }
 }
