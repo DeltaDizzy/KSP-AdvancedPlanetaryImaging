@@ -2,8 +2,6 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\Program Files\Unity\Editor\Data\Tools\RoslynScripts</CscToolPath>
-    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -47,65 +45,107 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-     <Compile Include="Assets\GreyscaleEffect.cs" />
-     <Compile Include="Assets\KSPAssetCompilerFix.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <None Include="Assets\PartTools\Shaders\EmissiveBumpedSpecularMapped.shader" />
      <None Include="Assets\SquadCore\Shaders\DepthMask.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\PartTools\Shaders\BumpedSpecularCutoff.shader" />
      <None Include="Assets\PartTools\Shaders\ParticleAdd.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\SquadCore\Shaders\ParticleAlpha.shader" />
      <None Include="Assets\SquadCore\Shaders\EmissiveSpecular.shader" />
-     <None Include="Assets\Blue.shader" />
      <None Include="Assets\PartTools\Shaders\EmissiveBumpedSpecular.shader" />
      <None Include="Assets\PartTools\Shaders\DepthMask.shader" />
      <None Include="Assets\PartTools\Shaders\Cutoff.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <None Include="Assets\SquadCore\Shaders\AlphaBlendedZSorted.shader" />
      <None Include="Assets\SquadCore\Shaders\CutoffBumped.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\SquadCore\Shaders\ScrollingUnlit.shader" />
      <None Include="Assets\PartTools\Shaders\SolidColorAlpha.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\SquadCore\Shaders\SpecularBumpTransparent.shader" />
      <None Include="Assets\SquadCore\Shaders\Bumped.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
      <None Include="Assets\PartTools\Shaders\Alpha.shader" />
      <None Include="Assets\PartTools\Shaders\BumpedSpecular.shader" />
      <None Include="Assets\SquadCore\LightingKSP.cginc" />
      <None Include="Assets\SquadCore\Shaders\Emissive.shader" />
      <None Include="Assets\PartTools\Shaders\KSPParticle AddSmooth.shader" />
      <None Include="Assets\PartTools\Shaders\Specular.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\PartTools\Shaders\Bumped.shader" />
      <None Include="Assets\SquadCore\Shaders\Unlit.shader" />
      <None Include="Assets\SquadCore\Shaders\BumpedSpecular.shader" />
      <None Include="Assets\PartTools\Shaders\SpecularBumpTransparent.shader" />
      <None Include="Assets\PartTools\Shaders\UnlitColor.shader" />
      <None Include="Assets\PartTools\Shaders\Diffuse.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\PartTools\Shaders\SpecularCutoffOpaque.shader" />
      <None Include="Assets\PartTools\Shaders\SpecularCutoff.shader" />
      <None Include="Assets\PartTools\Shaders\SpecularTransparent.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald Bold - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\PartTools\Shaders\EmissiveSpecular.shader" />
-     <None Include="Assets\Greyscale.shader" />
      <None Include="Assets\SquadCore\Shaders\Cutoff.shader" />
      <None Include="Assets\SquadCore\Shaders\SpecularTransparent.shader" />
      <None Include="Assets\PartTools\Shaders\UnlitTransparent.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\PartTools\Shaders\AlphaSpecular.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\NotoSans - License.txt" />
      <None Include="Assets\PartTools\Shaders\Unlit.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
      <None Include="Assets\SquadCore\Shaders\BumpedSpecularMapped.shader" />
      <None Include="Assets\PartTools\Shaders\AlphaBlendedZSorted.shader" />
      <None Include="Assets\PartTools\Shaders\BumpedSpecularMapped.shader" />
+     <None Include="Assets\XML\advplanetaryimaging_bundle.xml" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\SquadCore\Shaders\EmissiveBumpedSpecular.shader" />
      <None Include="Assets\PartTools\Shaders\CutoffBumped.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\SquadCore\Shaders\UnlitColor.shader" />
      <None Include="Assets\PartTools\Shaders\ScrollingUnlit.shader" />
      <None Include="Assets\SquadCore\Shaders\AlphaSpecular.shader" />
+     <None Include="Assets\ImageEffects\ColorBlend\ColorBlend.shader" />
      <None Include="Assets\SquadCore\Shaders\Diffuse.shader" />
      <None Include="Assets\SquadCore\Shaders\Alpha.shader" />
      <None Include="Assets\PartTools\Shaders\AlphaAdditive.shader" />
+     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
      <None Include="Assets\SquadCore\Shaders\Specular.shader" />
      <None Include="Assets\SquadCore\Shaders\LightwrapSpecular.shader" />
      <None Include="Assets\SquadCore\Shaders\InternalSpace.shader" />
@@ -113,7 +153,6 @@
      <None Include="Assets\PartTools\Shaders\LightwrapSpecular.shader" />
      <None Include="Assets\SquadCore\Shaders\AlphaAdditive.shader" />
      <None Include="Assets\SquadCore\Shaders\KSPParticle AddSmooth.shader" />
-     <None Include="Assets\API_Tex.shader" />
      <None Include="Assets\SquadCore\Shaders\UnlitTransparent.shader" />
      <None Include="Assets\SquadCore\Shaders\SolidColorAlpha.shader" />
      <None Include="Assets\PartTools\Shaders\InternalSpace.shader" />
@@ -124,31 +163,34 @@
      <None Include="Assets\SquadCore\Shaders\EmissiveBumpedSpecularMapped.shader" />
      <None Include="Assets\SquadCore\Shaders\SpecularCutoff.shader" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -327,17 +369,26 @@
  <Reference Include="UnityEngine.XRModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+ </Reference>
  <Reference Include="PartTools">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Assets/PartTools/Lib/PartTools.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Assets/PartTools/Lib/PartTools.dll</HintPath>
  </Reference>
  <Reference Include="PartToolsEditor">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Assets/PartTools/Lib/PartToolsEditor.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Assets/PartTools/Lib/PartToolsEditor.dll</HintPath>
  </Reference>
  <Reference Include="KSPAssetCompiler">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Assets/Plugins/KSPAssets/KSPAssetCompiler.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Assets/Plugins/KSPAssets/KSPAssetCompiler.dll</HintPath>
  </Reference>
  <Reference Include="KSPAssets">
- <HintPath>E:/KSP-AdvancedPlanetaryImaging/Assets/Plugins/KSPAssets/KSPAssets.dll</HintPath>
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Assets/Plugins/KSPAssets/KSPAssets.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.1-1.0.56-Editor">
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-1.0.56-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.1-1.0.56-Runtime">
+ <HintPath>E:/GitHub/KSP-AdvancedPlanetaryImaging/API_Unity/KSP-AdvancedPlanetaryImaging/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.1-1.0.56-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -696,12 +747,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{FE9EF081-F730-F582-19CE-4DB4AF67BCF1}</Project>
+      <Project>{D46021C2-E3F6-3DBA-57FD-FB514E2AEEF2}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

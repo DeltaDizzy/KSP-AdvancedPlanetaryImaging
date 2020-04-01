@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KSPBundleDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" UrlName="advplanetaryimaging" Name="advplanetaryimaging" CreatedTime="-8586159194058157574">
+  <Author />
+  <Info />
+  <Assets>
+    <Asset Name="ColorBlend" Path="Assets/ColorBlend.mat" Type="Material" Url="ColorBlend" AutoLoad="false" />
+  </Assets>
+  <Dependencies />
+</KSPBundleDefinition>

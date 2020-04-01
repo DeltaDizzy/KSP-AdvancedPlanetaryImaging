@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Assets.Plugins.KSPAssets.Editor
 {
-    [InitializeOnLoad]
+    //[InitializeOnLoad]
     static class TextMeshProResolver
     {
         private const string TextMeshPro = "TextMesh Pro/Plugins";
